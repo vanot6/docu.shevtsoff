@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Archive Digitization – Ivan Shevtsoff</title>
+  <link href="https://fonts.googleapis.com/css2?family=Helvetica:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Helvetica', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      color: #111;
+      background-color: #f9f9f9;
+    }
+    header, section, footer {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    header {
+      background: #fff;
+      border-bottom: 2px solid #ccc;
+      text-align: center;
+    }
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #004466;
+    }
+    h1, h2 {
+      color: #2c3e50;
+      font-weight: 700;
+    }
+    .services, .steps {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      flex: 1 1 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .card img {
+      max-width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 1rem;
+    }
+    footer {
+      text-align: center;
+      background: #fff;
+      color: #777;
+      font-size: 0.9rem;
+      border-top: 2px solid #ccc;
+    }
+    .cta {
+      background: #004466;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: inline-block;
+      margin-top: 1rem;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    @media (max-width: 600px) {
+      .services, .steps {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Ivan Shevtsoff Documentation</div>
+  <h1>Archive Digitization & Document Services</h1>
+  <p>Custom solutions for technical archives, institutions, and companies</p>
+</header>
+
+<section>
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="card">
+      <img src="images/scanner.jpg" alt="High-Volume Scanner">
+      <h3>High-Volume Scanning</h3>
+      <p>Digitization of up to 100,000 pages per project – including large formats and handwritten content.</p>
+    </div>
+    <div class="card">
+      <img src="images/folder-structure.jpg" alt="File Structure">
+      <h3>Structuring & Classification</h3>
+      <p>Consistent file naming, folder hierarchy, and metadata tagging for quick retrieval and organization.</p>
+    </div>
+    <div class="card">
+      <img src="images/cloud-storage.jpg" alt="Cloud Storage">
+      <h3>Secure Cloud Storage</h3>
+      <p>Cloud hosting in ISO-certified data centers or AWS S3 – with role-based access for your team.</p>
+    </div>
+    <div class="card">
+      <img src="images/multilingual.jpg" alt="Language Support">
+      <h3>Multilingual Project Support</h3>
+      <p>Experience handling German, Russian, and English documentation – including translation on request.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>How It Works</h2>
+  <div class="steps">
+    <div class="card">
+      <img src="images/shipping.jpg" alt="Shipping">
+      <h3>1. Send or Schedule Pickup</h3>
+      <p>Ship your binders to us or arrange pickup throughout Germany.</p>
+    </div>
+    <div class="card">
+      <img src="images/digitization.jpg" alt="Scanning Process">
+      <h3>2. Scanning & Structuring</h3>
+      <p>We scan, rename, organize, and safely store your files.</p>
+    </div>
+    <div class="card">
+      <img src="images/access.jpg" alt="Secure Access">
+      <h3>3. Delivery & Access</h3>
+      <p>You receive access via a secure online archive or physical storage device.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Contact</h2>
+  <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2rem;">
+    <div>
+      <p><strong>Ivan Shevtsoff Documentation</strong><br>
+         Bahnhofstraße 6, 65623 Hahnstätten, Germany<br>
+         Phone: +49 1575 6364745<br>
+         Email: <a href="mailto:i.shevtsoff@gmail.com">i.shevtsoff@gmail.com</a></p>
+      <a href="mailto:i.shevtsoff@gmail.com" class="cta">Request a Quote</a>
+    </div>
+    <div>
+      <h4>Working Hours</h4>
+      <p>
+        Monday – Friday: 9:00 – 17:00<br>
+        Saturday: 10:00 – 14:00<br>
+        Sunday & Holidays: Closed
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 Ivan Shevtsov – All rights reserved |
+  <a href="#" onclick="showImpressum()" style="color: #00aaff;">Legal Notice</a> |
+  <a href="#" onclick="showPrivacy()" style="color: #00aaff;">Privacy Policy</a>
+</footer>
+
+<!-- Cookie Consent Banner -->
+<div id="cookie-banner" style="position: fixed; bottom: 0; left: 0; right: 0; background: #222; color: #fff; padding: 1rem; text-align: center; z-index: 9999;">
+  <span>
+    This website uses cookies to ensure you get the best experience. By continuing to browse, you accept our use of cookies.
+  </span>
+  <button onclick="document.getElementById('cookie-banner').style.display='none';" style="margin-left: 1rem; background: #00aaff; color: white; border: none; padding: 0.5rem 1rem; cursor: pointer;">
+    Accept
+  </button>
+</div>
+
+<!-- Impressum Modal -->
+<div id="impressum-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:9998;">
+  <div style="background:white; width:90%; max-width:700px; margin:10% auto; padding:2rem; position:relative;">
+    <h2>Legal Notice (Impressum)</h2>
+    <p><strong>Information in accordance with §5 TMG:</strong><br>
+    Ivan Shevtsov<br>
+    Bahnhofstraße 6<br>
+    65623 Hahnstätten, Germany</p>
+    <p><strong>Contact:</strong><br>
+    Phone: +49 1575 6364745<br>
+    Email: i.shevtsoff@gmail.com</p>
+    <p><strong>Responsible for content under §55 para. 2 RStV:</strong><br>
+    Ivan Shevtsov, same address as above</p>
+    <button onclick="document.getElementById('impressum-modal').style.display='none';" style="position:absolute; top:1rem; right:1rem;">✖</button>
+  </div>
+</div>
+
+<!-- Privacy Policy Modal -->
+<div id="privacy-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:9998;">
+  <div style="background:white; width:90%; max-width:700px; margin:10% auto; padding:2rem; position:relative;">
+    <h2>Privacy Policy</h2>
+    <p>
+      We are committed to protecting your personal data. This website does not collect identifiable information unless you contact us directly.
+      Any data you provide (e.g. via email) will be processed solely to handle your request and in accordance with GDPR (Art. 6(1)(b) GDPR).
+    </p>
+    <p>
+      No third-party tracking or analytics services are used. Server logs are stored securely and deleted automatically.
+    </p>
+    <p>
+      You may request access to, correction or deletion of your stored data at any time by contacting: i.shevtsoff@gmail.com
+    </p>
+    <p>
+      For questions about data protection, feel free to get in touch.
+    </p>
+    <button onclick="document.getElementById('privacy-modal').style.display='none';" style="position:absolute; top:1rem; right:1rem;">✖</button>
+  </div>
+</div>
+
+<!-- JS Functions -->
+<script>
+  function showImpressum() {
+    document.getElementById('impressum-modal').style.display = 'block';
+  }
+  function showPrivacy() {
+    document.getElementById('privacy-modal').style.display = 'block';
+  }
+</script>
+</body>
+</html>
